@@ -39,7 +39,7 @@
                                         <td><?php echo $value["account_balance"]; ?></td>
                                          <td>
                                             <div class="action-btns">
-                                               <?php echo $this->Html->link('<button class="btn btn-primary btn-xs bt-action"><i class="fa fa-search"></i></button>', array('controller' => 'aggregates', 'action' => 'aggregatedash', $value['service_id']), array('escape' => false));
+                                               <?php echo $this->Html->link('<i class="fa fa-search"></i>', array('controller' => 'aggregates', 'action' => 'aggregatedash', $value['service_id']), array('escape' => false));
                                                 ?> 
                                             </div><!-- action-btns -->
                                         </td>

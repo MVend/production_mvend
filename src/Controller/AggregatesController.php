@@ -16,16 +16,15 @@ class AggregatesController extends AppController {
 
 
     public function index(){
-    	$this->layout = 'aggregate';
+    	// $this->layout = 'default';
     	$aggregates = $this->Aggregates->find('all');
         $this->set('aggregates', $aggregates);
 
     }
 
-    public function aggregatedash($servid){
-    	// $this->viewBuilder()->setLayout('aggregate');
-    	$this->layout = 'aggregate';
-    	$aggregates = $this->Aggregates->findByServiceId($servid);
+    public function aggregatedash($id){
+        // $this->layout = 'default';
+    	$aggregates = $this->Aggregates->findByService_id($id);
         $this->set('aggregates', $aggregates);
     }
 
